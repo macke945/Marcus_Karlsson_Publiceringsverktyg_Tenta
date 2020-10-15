@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "name": "Blog",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "ASPNET",
+        "MVC",
+        "CSharp",
+        "Gatsby"
+      ],
+      "required": true
+    },
+    "desc": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "required": true,
+      "type": "date"
+    }
+  }
+}
