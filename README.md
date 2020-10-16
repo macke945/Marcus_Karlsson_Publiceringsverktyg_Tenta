@@ -7,8 +7,9 @@ to start the frontend to see what it looks like type either "npm run develop" or
 
 You need gatsby CLI to run this project.
 
-https://github.com/macke945/Marcus_Karlsson_Publiceringsverktyg_Tenta
+git repo: https://github.com/macke945/Marcus_Karlsson_Publiceringsverktyg_Tenta
 
+netlify: https://marcus-karlsson-portfolio.netlify.app/
 Jag skickade förra tentan i slack dms istället för på navet, hoppas att det inte är något problem.
 
 VG fråga:
