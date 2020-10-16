@@ -2,24 +2,25 @@ import React from "react"
 import PropTypes from "prop-types"
 import Image from "gatsby-image"
 import { FaGithubSquare, FaShareSquare } from "react-icons/fa"
+import { ProjectWrapper, ProjectInfo, ProjectNumber, ProjectStack, ProjectImage } from "../elements"
 const Project = ({ description, title, github, stack, url, image, index }) => {
   return (
-    <article className="project">
+    <ProjectWrapper>
       {/* if image is not supplied, instead of breaking, dont show any image */}
       {image && (
-        <Image fluid={image.childImageSharp.fluid} className="project-img" />
+        <ProjectImage fluid={image.childImageSharp.fluid} />
       )}
-      <div className="project-info">
-        <span className="project-number">0{index + 1}.</span>
+      <ProjectInfo>
+        <ProjectNumber>0{index + 1}.</ProjectNumber>
         {/* if title is not supplied, set a defualt title */}
         <h3>{title || "Projekt"}</h3>
-        <p className="project-description">{description}</p>
-        <div className="project-stack">
+        <p>{description}</p>
+        <ProjectStack>
           {stack.map(item => {
             return <span key={item.id}>{item.title}</span>
           })}
-        </div>
-        <div className="project-links">
+        </ProjectStack>
+        <div>
           <a href={github}>
             <FaGithubSquare className="project-icon" />
           </a>
@@ -27,8 +28,8 @@ const Project = ({ description, title, github, stack, url, image, index }) => {
             <FaShareSquare className="project-icon" />
           </a>
         </div>
-      </div>
-    </article>
+      </ProjectInfo>
+    </ProjectWrapper>
   )
 }
 

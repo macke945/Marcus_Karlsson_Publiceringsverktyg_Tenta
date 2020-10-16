@@ -2,7 +2,7 @@ import React from "react"
 import Title from "./Title"
 import Blog from "./Blog"
 import { Link } from "gatsby"
-import { Section, SectionCenter } from "../elements"
+import { Section, SectionCenter, BlogButton } from "../elements"
 export const Blogs = ({ blogs, title, showLink }) => {
   return (
     <Section>
@@ -14,9 +14,9 @@ export const Blogs = ({ blogs, title, showLink }) => {
       </SectionCenter>
       {/* If the showLink is undefined, dont show any link, otherwise show link */}
       {showLink && (
-        <Link to="/blog" className="btn center-btn">
+        <BlogButton to="/blog">
           Alla artiklar
-        </Link>
+        </BlogButton>
       )}
     </Section>
   )

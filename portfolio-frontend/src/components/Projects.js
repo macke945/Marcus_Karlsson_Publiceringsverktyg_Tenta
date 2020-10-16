@@ -2,21 +2,22 @@ import React from "react"
 import Title from "./Title"
 import Project from "./Project"
 import { Link } from "gatsby"
+import { ProjectsWrapper, SectionCenter, ProjectsButton } from "../elements"
 const Projects = ({ projects, title, showLink }) => {
   return (
-    <section className="section projects">
+    <ProjectsWrapper>
       <Title title={title} />
-      <div className="section-center projects-center">
+      <SectionCenter>
         {projects.map((project, index) => {
           return <Project key={project.id} index={index} {...project} />
         })}
-      </div>
+      </SectionCenter>
       {showLink && (
-        <Link to="/projects" className="btn center-btn">
+        <ProjectsButton to="/projects">
           Alla projekt
-        </Link>
+        </ProjectsButton>
       )}
-    </section>
+    </ProjectsWrapper>
   )
 }
 

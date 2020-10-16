@@ -1,9 +1,7 @@
 import React from "react"
-import Image from "gatsby-image"
-import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
 import SocialLinks from "../constants/socialLinks"
-import { Underline } from "../elements"
+import { Underline, HeroHeader, HeroImage, HeroCenter, HeroButton, HeroInfo, HeroWrapper } from "../elements"
 // ...GatsbyImageSharpFluid
 
 const query = graphql`
@@ -28,10 +26,10 @@ const Hero = () => {
   // console.log(data)
 
   return (
-    <header className="hero">
-      <div className="section-center hero-center">
-        <article className="hero-info">
-          <div>
+    <HeroHeader>
+      <HeroWrapper>
+        <HeroInfo>
+          <HeroCenter>
             <h1>I'm Marcus</h1>
             <Underline></Underline>
             <h4>Student inom TUC Linköping</h4>
@@ -43,15 +41,15 @@ const Hero = () => {
             <br />
             - Kontakta mig med knappen nedan
             <br />
-            <Link to="/contact" className="btn">
+            <HeroButton to="/contact">
               kontakta mig
-            </Link>
+            </HeroButton>
             <SocialLinks />
-          </div>
-        </article>
-        <Image fluid={fluid} className="hero-img" />
-      </div>
-    </header>
+          </HeroCenter>
+        </HeroInfo>
+        <HeroImage fluid={fluid}/>
+      </HeroWrapper>
+    </HeroHeader>
   )
 }
 export default Hero

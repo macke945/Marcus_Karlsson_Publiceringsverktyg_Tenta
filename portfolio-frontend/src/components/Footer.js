@@ -5,7 +5,7 @@ import {FooterWrapper}
 const Footer = () => {
   return (
     <FooterWrapper>
-      <div className="footer-content">
+      <div>
         <SocialLinks styleClass="footer-links"></SocialLinks>
         <h4>
           copyright&copy; {new Date().getFullYear()} | &nbsp;

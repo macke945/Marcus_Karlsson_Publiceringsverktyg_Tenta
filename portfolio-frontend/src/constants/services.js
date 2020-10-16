@@ -1,5 +1,5 @@
 import React from "react"
-import { FaCode, FaSketch, FaAndroid } from "react-icons/fa"
+import { FaCode, FaSketch } from "react-icons/fa"
 export default [
   {
     id: 1,
@@ -15,8 +15,8 @@ export default [
   },
   {
     id: 3,
-    icon: <FaAndroid className="service-icon" />,
-    title: "app development",
-    text: `app development är mitt nästa mål, det är en otroligt stor marknad för appar och det är något jag vill lära mig.`,
+    icon: <FaCode className="service-icon" />,
+    title: "ASP.NET core",
+    text: `Har arbetat med ASP.NET sedan 2018 och det är vad jag är mest bekväm med. Kan bygga sidor från bloggar till cms system och allt emellan.`,
   },
 ]
