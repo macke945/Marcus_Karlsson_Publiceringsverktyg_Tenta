@@ -9,13 +9,13 @@ place-items: center;
 
     h4 {
         margin-top: 0.5rem;
-    color: var(--clr-white);
+    color: ${props => props.theme.colors.clrwhite}
     font-weight: normal;
     text-transform: uppercase;
     }
     
     span {
-        color: var(--clr-primary-5);
+        color: ${props => props.theme.colors.clrprimary5};
     }
 `
 export const FooterLinks = styled.div `

@@ -9,19 +9,19 @@ height: 5rem;
 display: flex;
 align-items: center;
 z-index: 200;
-background: var(--clr-white);
+background: ${props => props.theme.colors.clrwhite};
 `
 
 export const NavButton = styled.button `
 font-size: 2rem;
 background: transparent;
 border-color: transparent;
-color: var(--clr-primary-5);
+color: ${props => props.theme.colors.clrprimary5};
 cursor: pointer;
-transition: var(--transition);
+transition: ${props => props.theme.animations.transition};
 display:none;
 &:hover {
-    color: var(--clr-primary-2);
+    color: ${props => props.theme.colors.clrprimary2};
   }
 
 @media screen (min-width: 768px) {

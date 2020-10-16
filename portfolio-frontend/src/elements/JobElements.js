@@ -36,15 +36,15 @@ h3 {
 
 h4 {
     text-transform: uppercase;
-    color: var(--clr-grey-5);
-    background: var(--clr-grey-9);
+    color: ${props => props.theme.colors.clrgrey5};
+    background: ${props => props.theme.colors.clrgrey9};
     display: inline-block;
     padding: 0.375rem 0.75rem;
-    border-radius: var(--radius);
+    border-radius: ${props => props.theme.animations.radius};
 }
 `
 export const JobDate = styled.p `
-letter-spacing: var(--spacing);
+letter-spacing: ${props => props.theme.animations.spacing};
 `
 
 export const JobDesc = styled.div `
@@ -56,6 +56,6 @@ margin-bottom: 1.25rem;
 
 p {
     margin-bottom: 0;
-    color: var(--clr-grey-3);
+    color: ${props => props.theme.colors.clrgrey3};
 }
 `

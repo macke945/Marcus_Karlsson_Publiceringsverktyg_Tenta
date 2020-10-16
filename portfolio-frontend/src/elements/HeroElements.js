@@ -15,7 +15,7 @@ export const Underline = styled.div`
 width: 5rem;
 height: 0.25rem;
 margin-bottom: 1.25rem;
-background: var(--clr-primary-5);
+background: ${props => props.theme.colors.clrprimary5};
 margin-left: 0%;
 margin-right: auto;
 `
@@ -24,14 +24,14 @@ export const HeroHeader = styled.header `
 margin-top: -5rem;
 padding-top: 5rem;
 height: 100vh;
-background: var(--clr-primary-10);
+background: ${props => props.theme.colors.clrprimary10};
 position: relative;
 `
 
 export const HeroInfo = styled.article `
-background: var(--clr-primary-10);
+background: ${props => props.theme.colors.clrprimary10};
 h4 {
-    color: var(--clr-grey-5);
+    color: ${props => props.theme.colors.clrgrey5};
 }
 `
 export const HeroImage = styled(props => <Image {...props} />) `
@@ -58,25 +58,25 @@ max-width: 1170px;
 
 export const HeroButton = styled(props => <Link {...props} />) `
 text-transform: uppercase;
-background: var(--clr-primary-5);
-color: var(--clr-primary-9);
+background: ${props => props.theme.colors.clrprimary5};
+color: ${props => props.theme.colors.clrprimary9};
 padding: 0.375rem 0.75rem;
-letter-spacing: var(--spacing);
+letter-spacing: ${props => props.theme.animations.spacing};
 display: inline-block;
 font-weight: 700;
--webkit-transition: var(--transition);
-transition: var(--transition);
+-webkit-transition: ${props => props.theme.animations.transition};
+transition: ${props => props.theme.animations.transition};
 font-size: 0.875rem;
 border: 2px solid transparent;
 cursor: pointer;
 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-border-radius: var(--radius);
+border-radius: ${props => props.theme.animations.radius};
 width: 15%;
 text-align: center;
 
 &:hover {
-    color: var(--clr-primary-1);
-    background: var(--clr-primary-8);
+    color: ${props => props.theme.colors.clrprimary1};
+    background: ${props => props.theme.colors.clrprimary8};
 }
 
 @media screen (min-width: 992px) {

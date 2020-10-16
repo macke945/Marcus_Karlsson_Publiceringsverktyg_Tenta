@@ -7,5 +7,6 @@ to start the frontend to see what it looks like type either "npm run develop" or
 
 https://github.com/macke945/Marcus_Karlsson_Publiceringsverktyg_Tenta
 
+Jag skickade förra tentan i slack dms istället för på navet, hoppas att det inte är något problem.
 
 VG fråga:

@@ -20,23 +20,23 @@ max-width: 1170px;
 `
 
 export const Service = styled.article `
-background: var(--clr-white);
+background: ${props => props.theme.colors.clrwhite};
 padding: 3rem 1.5rem;
 margin-bottom: 2rem;
-border-radius: var(--radius);
+border-radius: ${props => props.theme.animations.radius};
 text-align: center;
--webkit-transition: var(--transition);
-transition: var(--transition);
+-webkit-transition: ${props => props.theme.animations.transition};
+transition: ${props => props.theme.animations.transition};
 &:hover{
-    background: var(--clr-primary-5);
-    color: var(--clr-primary-9);
+    background: ${props => props.theme.colors.clrprimary5};
+    color: ${props => props.theme.colors.clrprimary9};
 }
 p{
-    -webkit-transition: var(--transition);
-    transition: var(--transition);
+    -webkit-transition: ${props => props.theme.animations.transition};
+    transition: ${props => props.theme.animations.transition};
 }
 
 p &:hover{
-    color: var(--clr-primary-9);
+    color: ${props => props.theme.colors.clrprimary9};
 }
 `
