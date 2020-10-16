@@ -14,14 +14,8 @@ Jag skickade förra tentan i slack dms istället för på navet, hoppas att det 
 
 VG fråga:
 
-Är inte det här samma fråga som förra tentan?
+Analysera och utvärdera användarens upplevelse och motivera val av design och funktionsmässiga alternativ vid utveckling 
 
-I alla fall vissa knep du kan använda är transitions på hover vilket visar användaren att det är klickbart till exempel. Det är något jag tycker ser bra ut och är användarvänligt.
+När jag börjar styla en sida är min nummer 1 prio användarvänlighet, en simpel sak är att ha så lite clicks som möjligt då det kan bli förvirrande, Jag vill att sitens UI ska vara så simpel som möjligt och att saker ska se bra ut är efter det.
+Ett exempel på det är att lägga transitions på knappar så att man kan se att det är klickbart när man har musen över det, en annan sak är att visa viktig information först så att folk förstår enklare, min filosofi är helt enkelt att om jag kan göra en sida som min farmor som inte ens vet vad en url är kan använda så är det en bra sida.
 
-Andra saker som jag uppskattar på hemsidor är när man kan klicka på en bild så den fyller skärmen så om bilden är liten och man vill se hela bilden kan man göra det vilket skulle vara av någon form av onClick funktion i javascript.
-
-Saker som overflow om du vill ha cirkel bilder som till exempel profilbilder som facebook har det kan vara något som gör din sida till dynamisk om du blandar in saker som expanderas onclick.
-
-Gömma saker/visa saker på hovers tycker jag ser otroligt bra ut om det är gjort korrekt.
-
-källa: https://onextrapixel.com/five-useful-coding-techniques-for-building-a-dynamic-website/
