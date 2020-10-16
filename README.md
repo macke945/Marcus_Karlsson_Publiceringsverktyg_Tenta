@@ -5,4 +5,7 @@ to start the backend type "npm run develop", you'll be meeted with a prompt to c
 
 to start the frontend to see what it looks like type either "npm run develop" or "gatsby develop" and then go to localhost:8000
 
+https://github.com/macke945/Marcus_Karlsson_Publiceringsverktyg_Tenta
 
+
+VG fråga:
